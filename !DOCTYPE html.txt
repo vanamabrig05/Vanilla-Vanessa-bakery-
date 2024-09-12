@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Vana Creations</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F8E8E8; /* Warm pink background */
+            color: #4B2E39; /* Complementary deep plum for text */
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #D97373; /* Richer pink for header */
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: #D97373; /* Richer pink for section headings */
+            border-bottom: 2px solid #F8E8E8;
+            padding-bottom: 0.5rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .order-form input, .order-form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 1rem;
+            border: 1px solid #D97373;
+            border-radius: 5px;
+        }
+
+        .order-form button {
+            padding: 10px 20px;
+            background-color: #D97373;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .social-media {
+            text-align: center;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #4B2E39; /* Deep plum for links */
+            font-weight: bold;
+        }
+
+        .contact {
+            padding: 1rem 0;
+            background-color: #F8E8E8;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .contact p {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            margin-bottom: 2rem;
+        }
+
+        .product-card {
+            width: 250px;
+            border: 1px solid #D97373;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            margin: 0.5rem 0;
+            color: #D97373;
+        }
+
+        .product-card p {
+            color: #4B2E39;
+            font-size: 1rem;
+            margin: 0.5rem 0;
+        }
+
+        .footer {
+            background-color: #D97373; /* Richer pink for footer */
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Vanilla Vana Creations</h1>
+        <p>Your Dream Desserts & Designs</p>
+    </header>
+
+    <div class="container">
+
+        <!-- About Me Section -->
+        <section class="section" id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am Vanessa, the creator behind Vanilla Vana Creations. I bring an open-minded approach to every baking and design project. I believe in working by hand, crafting the finest creations with care and passion. Let's turn your sweet dreams into reality with custom designs tailored just for you!
+            </p>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="section gallery" id="gallery">
+            <h2>My Work</h2>
+            <div>
+                <img src="sample1.jpg" alt="Cake Design 1">
+                <img src="sample2.jpg" alt="Pastry Design 2">
+                <!-- Replace with your own images -->
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section class="section products" id="products">
+            <h2>Our Creations and Prices</h2>
+            <div class="product-card">
+                <img src="cake1.jpg" alt="Cake 1">
+                <h3>Chocolate Delight</h3>
+                <p>Price: $25</p>
+            </div>
+            <div class="product-card">
+                <img src="cake2.jpg" alt="Cake 2">
+                <h3>Vanilla Heaven</h3>
+                <p>Price: $20</p>
+            </div>
+            <!-- Add more product cards as needed -->
+        </section>
+
+        <!-- Order Form Section -->
+        <section class="section order-form" id="order">
+            <h2>Place Your Order</h2>
+            <form action="https://example.com/order" method="post"> <!-- Replace with your backend order processing URL -->
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="order-details" placeholder="Describe your desired order (e.g., cake flavor, size, design)"></textarea>
+                <button type="submit">Submit Order</button>
+            </form>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact" id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:vanessamakwinja9@gmail.com">vanessamakwinja9@gmail.com</a></p>
+            <p>Phone: <a href="tel:+0982412916">0982412916</a></p>
+        </section>
+
+        <!-- Social Media Section -->
+        <section class="section social-media">
+            <h2>Connect with Me</h2>
+            <p>
+                Follow me on social media to stay updated on my latest creations and inspirations:
+            </p>
+            <a href="https://www.facebook.com/VanaMabrig" target="_blank">Facebook: Vana Mabrig</a> |
+            <a href="https://www.tiktok.com/@butterfly🦋" target="_blank">TikTok: @butterfly 🦋</a>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Vanilla Vana Creations. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
